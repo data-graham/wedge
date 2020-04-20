@@ -1,0 +1,52 @@
+{% load static %}
+<!DOCTYPE HTML>
+<html>
+    <head>
+    <title>{{ company_name }}</title>
+    <script type="text/javascript" src="{% static "js/jquery-1.11.1.min.js" %}"></script>
+    <script type="text/javascript" src="{% static "js/jquery-ui.js" %}"></script>
+    <META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
+    <META HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE">
+
+    <script type="text/javascript">
+    </script>
+</head>
+
+<body>
+
+<div class="centered-parent">
+
+<div class="ajax-fragment" id="fragment_1"></div>
+<div class="ajax-fragment" id="fragment_2"></div>
+<div class="ajax-fragment" id="fragment_3"></div>
+<div class="ajax-fragment" id="fragment_4"></div>
+<div class="ajax-fragment" id="fragment_5"></div>
+<div class="ajax-fragment" id="fragment_6"></div>
+<div class="ajax-fragment" id="fragment_7"></div>
+<div class="ajax-fragment" id="fragment_8"></div>
+<div class="ajax-fragment" id="fragment_9"></div>
+<div class="ajax-fragment" id="fragment_10"></div>
+
+<script type="text/javascript">
+    var getAjax = function () {
+    };
+    var url = '/ajax_fragment';
+
+    $(document).ready(function () {
+        $('#fragment_1').load(url + '/param_1/');
+        $('#fragment_2').load(url + '/param_2/');
+        $('#fragment_3').load(url + '/param_3/');
+        $('#fragment_4').load(url + '/param_4/');
+        $('#fragment_5').load(url + '/param_5/');
+        $('#fragment_6').load(url + '/param_6/');
+        $('#fragment_7').load(url + '/param_7/');
+        $('#fragment_8').load(url + '/param_8/');
+        $('#fragment_9').load(url + '/param_9/');
+        $('#fragment_10').load(url + '/param_10/');
+    });
+</script>
+
+</div>
+
+</body>
+</html>

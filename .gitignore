@@ -1,0 +1,13 @@
+*.pyc
+venv*
+static_root
+logs
+media
+scratch
+*.bak
+.idea
+*.sqlite3*
+data.json
+*.csv
+.env*
+certs
