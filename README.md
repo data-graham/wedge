@@ -5,3 +5,5 @@ Django logging deadlock test
 2. `pip install -r requirements.txt`
 3. `python manage.py migrate`
 4. `python manage.py runserver`
+
+See `LOGGING` in `wedge/settings.py` for how to repro.
