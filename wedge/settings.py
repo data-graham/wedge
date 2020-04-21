@@ -140,7 +140,8 @@ LOGGING = {
     },
     'handlers': {
         # With all handlers disabled, you can hit http://127.0.0.1:8000 forever with no ill effects.
-        # But if you enable any of the below handlers, the site will deadlock within 10-20 reloads.
+        # But if you enable any of the below handlers, the site will deadlock within 1000 requests
+        # (possibly much fewer). See AJAX_COUNT below.
 
         # 'mail_admins': {
         #     'level': 'ERROR',
@@ -167,4 +168,5 @@ LOGGING = {
     },
 }
 
-AJAX_COUNT = 10
+# Number of AJAX calls to make within the main page load.
+AJAX_COUNT = 1000
