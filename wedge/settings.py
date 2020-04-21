@@ -166,3 +166,5 @@ LOGGING = {
     'loggers': {
     },
 }
+
+AJAX_COUNT = 10

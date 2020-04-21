@@ -2,6 +2,7 @@
 
 
 from django.shortcuts import render
+from django.conf import settings
 
 
 import logging
@@ -10,6 +11,7 @@ logger = logging.getLogger(__name__)
 
 def home(request):
     context = {
+        'ajax_count': settings.AJAX_COUNT,
     }
     return render(request, 'home.html', context)
 
